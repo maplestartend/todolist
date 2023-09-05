@@ -52,6 +52,11 @@ btnAdd.addEventListener("click", (e) => {
   obj.content = txt.value;
   obj.status = "";
   data.push(obj);
+  if (tabID == "2") {
+    tabID = "0";
+    document.getElementById("0").setAttribute("class", "active");
+    document.getElementById("2").setAttribute("class", "");
+  }
   renderData();
 });
 
